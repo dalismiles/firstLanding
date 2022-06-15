@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+html {
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: rgb(58 2 118);
+  font-family: "Nunito", sans-serif;
+}
+
+/* HEADER - Section - class[main-header] */
+
+.main-header {
+  padding: 20px 0 20px 0;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 300px;
+}
+
+.main-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-header ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 100px;
+}
+
+.main-navbar ul a {
+  color: rgb(58 2 118);
+  text-decoration: none;
+}
+
+.avatar img {
+  margin: 20px 0 40px;
+  width: 350px;
+}
+
+.progress {
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 500px;
+}
+
+.progress-value {
+  animation: load 5s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background-color: rgb(220 154 254);
+  background-image: linear-gradient(315deg, rgb(220 154 254) 0%, #7ee8fa 74%);
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.main-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-section {
+  margin-bottom: 35px;
+  padding: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main-section div h1 {
+  margin: 0;
+}
+
+.main-section h2 {
+  color: rgb(10, 169, 201);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.main-section h2:last-child {
+  font-size: 1.3rem;
+}
+
+.main-section .edge {
+  color: rgb(58 2 118);
+  text-decoration: none;
+}
+
+.main-content .about {
+  padding: 30px;
+  color: rgb(58 2 118);
+  background-color: rgb(226, 249, 250);
+}
+
+.myworks-title {
+  margin: 40px 10% 10px;
+  padding: 20px;
+  background-color: rgb(226, 249, 250);
+  text-align: center;
+}
+
+.myworks {
+  margin: 10px 10%;
+  padding: 30px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center; /* X-axis */
+  align-items: start; /* Y-axis */
+  align-content: center;
+  gap: 30px;
+}
+
+.myworks div {
+  max-width: 300px;
+}
+
+.myworks div h3 {
+  color: rgb(176, 19, 100);
+}
+
+.card {
+  /* Proprietà Flexbox - contenuto (child)   */
+}
+
+.card img {
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.main-footer {
+  position: relative;
+  background: rgb(208, 210, 210);
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-footer img {
+  height: 25px;
+}
+
+.main-footer p {
+  font-weight: 800;
+  text-align: center;
+  color: rgba(9, 102, 121, 1);
+  font-size: 0.7em;
+}
+
+.main-footer .linkedin-button {
+  font-size: large;
+}
+
+.main-footer a {
+  color: rgba(9, 102, 121, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    height: 500px;
+    justify-content: start;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  .main-header ul {
+    flex-direction: row;
+    gap: 50px;
+    font-weight: 400;
+  }
+
+  .main-navbar {
+    width: calc(100% - 180px);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul a:hover {
+    color: rgb(204, 10, 91);
+  }
+
+  .avatar img {
+    width: 500px;
+  }
+
+  .main-section {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-section div:first-child {
+    margin-top: 30px;
+  }
+
+  .main-section h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .progress {
+    width: 90%;
+  }
+
+  .main-content {
+    margin-top: 120px;
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-content .about {
+    margin: 40px;
+    padding: 40px;
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 0px;
+  }
+
+  .myworks-title {
+    padding: 15px;
+  }
+
+  .myworks {
+    flex-direction: row;
+    flex-wrap: wrap row;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card img {
+    transition: transform 0.35s;
+    filter: grayscale(100%);
+  }
+
+  .card img:hover {
+    transform: scale(1.4);
+    filter: none;
+  }
+
+  .main-footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
